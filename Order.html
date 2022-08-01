@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>Document</title>
+</head>
+<body class="flex justify-center px-12 bg-black text-white">
+
+ 
+  <container class="max-w-2xl">
+    <h1 class="text-4xl p-6 mb-6 text-center">Please Carefully Fill <br> In The Form To Place Your Order</h1>
+
+    <form   name="breyee"
+    action="/pages/ThankYou"
+    method="POST"
+    data-netlify="true">
+       <label class="p-2" for="fname">First name:</label><br>
+        <input class="m-4 w-full rounded text-black" type="text" id="fname" name="fname" required><br>
+
+        <label class="p-2" for="lname">Last Name:</label><br>
+        <input class="m-4 w-full rounded text-black" type="text" id="lname" name="lname"><br>
+
+        <label class="p-2" for="phone">Phone No:</label><br>
+        <input class="m-4 w-full rounded text-black" type="integer" id="phone" name="Phone" required><br>
+
+        <label class="p-2" for="Alt_phone">Alternative Phone No:</label><br>
+        <input class="m-4 w-full rounded text-black" type="integer" id="Alt-Phone" name="Alt-Phone"><br>
+
+        <label class="p-2" for="Email">Email:</label><br>
+        <input class="m-4 w-full rounded text-black" type="email" id="Email" name="Email"><br>
+
+        <label class="p-2" for="Address">Delivery Address:</label><br>
+        <input class="m-4 w-full rounded text-black" type="text" id="Address" name="Address" required><br>
+
+
+        <label class="p-2" for="Quantity" class="">Select Product Quantity:</label><br>
+        <select class="m-4 w-full rounded text-black" id="Quantity" name="Quantity" autocomplete="Quantity"         <input class="m-4 w-full rounded" type="text" id="Address" name="data[Jumper-Address]" required><br>
+          ><br>
+          <option>1 Can of Breylee - N8,000</option>
+          <option>2 Cans of Breylee - N15,000</option>
+          <option>3 Cans of Breylee - N21,000</option>
+        </select><br>
+
+        <button class="p-2 mx-8 my-4 w-full rounded bg-red-600" type="submit">PLACE YOUR ORDER</button>
+      </form >
+
+    </container>
+
+
+
+
+
+</body>
+</html>
