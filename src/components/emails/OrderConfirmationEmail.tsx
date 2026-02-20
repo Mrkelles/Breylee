@@ -1,8 +1,10 @@
+
 import * as React from 'react';
 
 interface OrderConfirmationEmailProps {
   fullName: string;
   phoneNumber: string;
+  whatsappNumber?: string;
   address: string;
   state: string;
   quantity: string;
@@ -11,6 +13,7 @@ interface OrderConfirmationEmailProps {
 export const OrderConfirmationEmail: React.FC<Readonly<OrderConfirmationEmailProps>> = ({
   fullName,
   phoneNumber,
+  whatsappNumber,
   address,
   state,
   quantity,
@@ -24,6 +27,7 @@ export const OrderConfirmationEmail: React.FC<Readonly<OrderConfirmationEmailPro
     <ul>
       <li><strong>Full Name:</strong> {fullName}</li>
       <li><strong>Phone Number:</strong> {phoneNumber}</li>
+      {whatsappNumber && whatsappNumber !== 'Not provided' && <li><strong>WhatsApp Number:</strong> {whatsappNumber}</li>}
       <li><strong>Address:</strong> {address}</li>
       <li><strong>State:</strong> {state}</li>
       <li><strong>Quantity:</strong> {quantity}</li>

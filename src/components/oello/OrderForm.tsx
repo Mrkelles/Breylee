@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useFormState, useFormStatus } from "react-dom";
@@ -9,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { AlertCircle, Check, ShieldCheck, Truck } from "lucide-react";
+import { AlertCircle, Check, Loader2, ShieldCheck, Truck } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const nigerianStates = [
@@ -30,7 +31,14 @@ function SubmitButton() {
   const { pending } = useFormStatus();
   return (
     <Button type="submit" className="w-full text-lg font-bold py-6" size="lg" disabled={pending}>
-      {pending ? "Submitting..." : "Rush My Order Now!"}
+      {pending ? (
+        <>
+          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+          Placing Your Order...
+        </>
+      ) : (
+        "Rush My Order Now!"
+      )}
     </Button>
   );
 }
@@ -41,7 +49,7 @@ export default function OrderForm() {
   const { toast } = useToast();
 
   useEffect(() => {
-    if (state.message && state.errors) {
+    if (state.message && state.errors && Object.keys(state.errors).length > 0) {
       toast({
         variant: "destructive",
         title: "Error",
@@ -90,17 +98,23 @@ export default function OrderForm() {
             </div>
             
             {/* Customer Details */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="space-y-2">
                 <Label htmlFor="fullName" className="text-lg">Full Name</Label>
                 <Input id="fullName" name="fullName" placeholder="e.g., John Doe" required />
                 {state.errors?.fullName && <p className="text-sm text-destructive">{state.errors.fullName[0]}</p>}
             </div>
-            <div className="space-y-2">
-                <Label htmlFor="phoneNumber" className="text-lg">Phone Number</Label>
-                <Input id="phoneNumber" name="phoneNumber" type="tel" placeholder="e.g., 08012345678" required />
-                {state.errors?.phoneNumber && <p className="text-sm text-destructive">{state.errors.phoneNumber[0]}</p>}
-            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                    <Label htmlFor="phoneNumber" className="text-lg">Phone Number</Label>
+                    <Input id="phoneNumber" name="phoneNumber" type="tel" placeholder="e.g., 08012345678" required />
+                    {state.errors?.phoneNumber && <p className="text-sm text-destructive">{state.errors.phoneNumber[0]}</p>}
+                </div>
+                <div className="space-y-2">
+                    <Label htmlFor="whatsappNumber" className="text-lg">Whatsapp Number <span className="text-muted-foreground">(Optional)</span></Label>
+                    <Input id="whatsappNumber" name="whatsappNumber" type="tel" placeholder="e.g., 08012345678" />
+                    {state.errors?.whatsappNumber && <p className="text-sm text-destructive">{state.errors.whatsappNumber[0]}</p>}
+                </div>
             </div>
 
             <div className="space-y-2">

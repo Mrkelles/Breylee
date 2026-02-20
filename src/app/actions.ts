@@ -13,8 +13,9 @@ const OrderSchema = z.object({
   phoneNumber: z
     .string()
     .min(10, { message: "A valid phone number is required." }),
+  whatsappNumber: z.string().optional(),
   address: z.string().min(10, { message: "A detailed address is required." }),
-  state: z.string().min(2, { message: "State is required." }),
+  state: z.string({ required_error: "State is required." }).min(2, { message: "State is required." }),
   quantity: z.string({ required_error: "Please select a quantity." }),
 });
 
@@ -22,6 +23,7 @@ export type OrderState = {
   errors?: {
     fullName?: string[];
     phoneNumber?: string[];
+    whatsappNumber?: string[];
     address?: string[];
     state?: string[];
     quantity?: string[];
@@ -39,6 +41,7 @@ export async function submitOrder(prevState: OrderState, formData: FormData) {
   const validatedFields = OrderSchema.safeParse({
     fullName: formData.get("fullName"),
     phoneNumber: formData.get("phoneNumber"),
+    whatsappNumber: formData.get("whatsappNumber"),
     address: formData.get("address"),
     state: formData.get("state"),
     quantity: formData.get("quantity"),
@@ -51,7 +54,7 @@ export async function submitOrder(prevState: OrderState, formData: FormData) {
     };
   }
 
-  const { fullName, phoneNumber, address, state, quantity } =
+  const { fullName, phoneNumber, whatsappNumber, address, state, quantity } =
     validatedFields.data;
 
   const quantityLabel =
@@ -66,6 +69,7 @@ export async function submitOrder(prevState: OrderState, formData: FormData) {
       react: OrderConfirmationEmail({
         fullName,
         phoneNumber,
+        whatsappNumber: whatsappNumber || "Not provided",
         address,
         state,
         quantity: quantityLabel,
