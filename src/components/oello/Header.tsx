@@ -12,7 +12,7 @@ export default function Header() {
         </Link>
         <nav className="flex items-center">
           <Button asChild>
-            <Link href="#order-section">Order Now</Link>
+            <Link href="/order">Order Now</Link>
           </Button>
         </nav>
       </div>

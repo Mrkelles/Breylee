@@ -34,7 +34,7 @@ export default function Hero() {
           </ul>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Button asChild size="lg" className="shadow-lg">
-              <Link href="#order-section">Claim Your Discount Now</Link>
+              <Link href="/order">Claim Your Discount Now</Link>
             </Button>
           </div>
         </div>
