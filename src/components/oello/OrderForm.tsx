@@ -103,6 +103,12 @@ export default function OrderForm() {
                 <Input id="fullName" name="fullName" placeholder="e.g., John Doe" required />
                 {state.errors?.fullName && <p className="text-sm text-destructive">{state.errors.fullName[0]}</p>}
             </div>
+
+            <div className="space-y-2">
+                <Label htmlFor="email" className="text-lg">Email Address <span className="text-muted-foreground">(Optional)</span></Label>
+                <Input id="email" name="email" type="email" placeholder="e.g., you@example.com" />
+                {state.errors?.email && <p className="text-sm text-destructive">{state.errors.email[0]}</p>}
+            </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">

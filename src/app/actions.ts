@@ -10,6 +10,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 const OrderSchema = z.object({
   fullName: z.string().min(2, { message: "Full name is required." }),
+  email: z.string().email({ message: "Please enter a valid email." }).optional().or(z.literal('')),
   phoneNumber: z
     .string()
     .min(10, { message: "A valid phone number is required." }),
@@ -22,6 +23,7 @@ const OrderSchema = z.object({
 export type OrderState = {
   errors?: {
     fullName?: string[];
+    email?: string[];
     phoneNumber?: string[];
     whatsappNumber?: string[];
     address?: string[];
@@ -40,6 +42,7 @@ const quantityOptions = [
 export async function submitOrder(prevState: OrderState, formData: FormData) {
   const validatedFields = OrderSchema.safeParse({
     fullName: formData.get("fullName"),
+    email: formData.get("email"),
     phoneNumber: formData.get("phoneNumber"),
     whatsappNumber: formData.get("whatsappNumber"),
     address: formData.get("address"),
@@ -54,7 +57,7 @@ export async function submitOrder(prevState: OrderState, formData: FormData) {
     };
   }
 
-  const { fullName, phoneNumber, whatsappNumber, address, state, quantity } =
+  const { fullName, email, phoneNumber, whatsappNumber, address, state, quantity } =
     validatedFields.data;
 
   const quantityLabel =
@@ -68,6 +71,7 @@ export async function submitOrder(prevState: OrderState, formData: FormData) {
       subject: "New Order from Oello Shop!",
       react: OrderConfirmationEmail({
         fullName,
+        email: email || "Not provided",
         phoneNumber,
         whatsappNumber: whatsappNumber || "Not provided",
         address,
