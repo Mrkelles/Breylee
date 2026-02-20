@@ -27,7 +27,7 @@ const benefits = [
 export default function Benefits() {
   return (
     <section>
-      <div className="container text-center">
+      <div className="container mx-auto px-4 text-center">
         <div className="space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold">
             Experience the Difference

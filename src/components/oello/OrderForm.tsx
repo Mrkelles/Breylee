@@ -104,12 +104,6 @@ export default function OrderForm() {
                 {state.errors?.fullName && <p className="text-sm text-destructive">{state.errors.fullName[0]}</p>}
             </div>
 
-            <div className="space-y-2">
-                <Label htmlFor="email" className="text-lg">Email Address <span className="text-muted-foreground">(Optional)</span></Label>
-                <Input id="email" name="email" type="email" placeholder="e.g., you@example.com" />
-                {state.errors?.email && <p className="text-sm text-destructive">{state.errors.email[0]}</p>}
-            </div>
-            
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
                     <Label htmlFor="phoneNumber" className="text-lg">Phone Number</Label>
@@ -121,6 +115,12 @@ export default function OrderForm() {
                     <Input id="whatsappNumber" name="whatsappNumber" type="tel" placeholder="e.g., 08012345678" />
                     {state.errors?.whatsappNumber && <p className="text-sm text-destructive">{state.errors.whatsappNumber[0]}</p>}
                 </div>
+            </div>
+
+            <div className="space-y-2">
+                <Label htmlFor="email" className="text-lg">Email Address <span className="text-muted-foreground">(Optional)</span></Label>
+                <Input id="email" name="email" type="email" placeholder="e.g., you@example.com" />
+                {state.errors?.email && <p className="text-sm text-destructive">{state.errors.email[0]}</p>}
             </div>
 
             <div className="space-y-2">

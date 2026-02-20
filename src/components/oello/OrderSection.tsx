@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function OrderSection() {
   return (
     <section id="order-section" className="bg-gradient-to-b from-secondary/50 to-background">
-      <div className="container max-w-5xl mx-auto">
+      <div className="container max-w-5xl mx-auto px-4">
           <Card className="shadow-2xl text-center">
             <CardHeader className="bg-accent text-accent-foreground p-8 rounded-t-lg">
                 <CardTitle className="text-3xl md:text-4xl font-bold">

@@ -9,7 +9,7 @@ export default function Hero() {
 
   return (
     <section className="bg-secondary/50">
-      <div className="container grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter">
             Unveil Your Brightest Smile, Naturally.
