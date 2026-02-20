@@ -3,10 +3,16 @@
 
 import { redirect } from "next/navigation";
 import { z } from "zod";
+import { Resend } from "resend";
+import OrderConfirmationEmail from "@/components/emails/OrderConfirmationEmail";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 const OrderSchema = z.object({
   fullName: z.string().min(2, { message: "Full name is required." }),
-  phoneNumber: z.string().min(10, { message: "A valid phone number is required." }),
+  phoneNumber: z
+    .string()
+    .min(10, { message: "A valid phone number is required." }),
   address: z.string().min(10, { message: "A detailed address is required." }),
   state: z.string().min(2, { message: "State is required." }),
   quantity: z.string({ required_error: "Please select a quantity." }),
@@ -22,6 +28,12 @@ export type OrderState = {
   };
   message?: string | null;
 };
+
+const quantityOptions = [
+  { value: "1", label: "1 Pack (Trial)" },
+  { value: "2", label: "2 Packs (Recommended)" },
+  { value: "3", label: "3 Packs (Best Value)" },
+];
 
 export async function submitOrder(prevState: OrderState, formData: FormData) {
   const validatedFields = OrderSchema.safeParse({
@@ -39,9 +51,42 @@ export async function submitOrder(prevState: OrderState, formData: FormData) {
     };
   }
 
-  // Here you would typically process the order, e.g.,
-  // save to a database, call an API, etc.
-  console.log("New Order Submitted:", validatedFields.data);
+  const { fullName, phoneNumber, address, state, quantity } =
+    validatedFields.data;
+
+  const quantityLabel =
+    quantityOptions.find((o) => o.value === quantity)?.label ??
+    "Unknown Quantity";
+
+  try {
+    const { data, error } = await resend.emails.send({
+      from: "Oello Shop <onboarding@resend.dev>",
+      to: ["cckelles@gmail.com"],
+      subject: "New Order from Oello Shop!",
+      react: OrderConfirmationEmail({
+        fullName,
+        phoneNumber,
+        address,
+        state,
+        quantity: quantityLabel,
+      }),
+    });
+
+    if (error) {
+      console.error({ error });
+      return {
+        errors: {},
+        message: `Error sending email: ${error.message}. Please try again.`,
+      };
+    }
+  } catch (error) {
+    console.error(error);
+    return {
+      errors: {},
+      message:
+        "An unexpected error occurred while sending the email. Please try again.",
+    };
+  }
 
   redirect("/thank-you");
 }
