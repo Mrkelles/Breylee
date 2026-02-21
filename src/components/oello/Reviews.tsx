@@ -63,7 +63,7 @@ export default function Reviews() {
               return (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="p-1 h-full">
-                  <Card className="h-full flex flex-col justify-between shadow-lg">
+                  <Card className="h-full flex flex-col justify-between shadow-lg bg-white/10 backdrop-blur-lg border border-white/20">
                     <CardContent className="p-6 space-y-4">
                         <Rating rating={review.rating} />
                         <p className="italic text-foreground/80">&quot;{review.comment}&quot;</p>
