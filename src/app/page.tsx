@@ -8,6 +8,9 @@ import OrderSection from "@/components/oello/OrderSection";
 import Footer from "@/components/oello/Footer";
 import About from "@/components/oello/About";
 import Gallery from "@/components/oello/Gallery";
+import FourImageGrid from "@/components/oello/FourImageGrid";
+import ProductFeatures from "@/components/oello/ProductFeatures";
+import Pricing from "@/components/oello/Pricing";
 
 export default function Home() {
   return (
@@ -18,7 +21,11 @@ export default function Home() {
         <About />
         <Gallery />
         <Benefits />
+        <FourImageGrid />
+        <ProductFeatures />
+        <Benefits />
         <HowToUse />
+        <Pricing />
         <Reviews />
         <Faq />
         <OrderSection />
