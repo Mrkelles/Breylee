@@ -8,7 +8,7 @@ const pricingOptions = [
     title: "1 Pack (Trial)",
     price: "₦14,000",
     originalPrice: "₦20,000",
-    features: ["1 Jar of Whitening Powder", "Perfect for trying out", "Noticeable results"],
+    features: ["1 Jar of Whitening Powder", "Perfect for trying out", "Noticeable results", "Free Delivery"],
     highlight: false,
   },
   {
