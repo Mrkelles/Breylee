@@ -6,6 +6,8 @@ import Reviews from "@/components/oello/Reviews";
 import Faq from "@/components/oello/Faq";
 import OrderSection from "@/components/oello/OrderSection";
 import Footer from "@/components/oello/Footer";
+import About from "@/components/oello/About";
+import Gallery from "@/components/oello/Gallery";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <About />
+        <Gallery />
         <Benefits />
         <HowToUse />
         <Reviews />

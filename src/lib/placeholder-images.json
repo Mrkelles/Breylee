@@ -35,6 +35,24 @@
       "description": "Avatar for a third customer review",
       "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE1OTUwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "gallery-1",
+      "description": "A person smiling, showing white teeth",
+      "imageUrl": "https://images.unsplash.com/photo-1508002257421-afaf6ca14809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aGl0ZSUyMHRlZXRofGVufDB8fHx8MTc3MTY3MjIxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "white teeth"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Close up of the teeth whitening powder",
+      "imageUrl": "https://images.unsplash.com/photo-1760726254324-32a930dd7bdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aGl0ZW5pbmclMjBwb3dkZXJ8ZW58MHx8fHwxNzcxNjcyMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "whitening powder"
+    },
+    {
+      "id": "gallery-3",
+      "description": "Another happy customer with a bright smile",
+      "imageUrl": "https://images.unsplash.com/photo-1696718569329-bb9b81c05c98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMHNtaWxlfGVufDB8fHx8MTc3MTY3MjIxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "happy smile"
     }
   ]
 }
