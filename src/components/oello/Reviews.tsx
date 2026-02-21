@@ -25,6 +25,12 @@ const reviews = [
     rating: 4,
     comment: "Really happy with the results. It took a couple of weeks to see a big difference, but it's definitely effective and doesn't make my teeth sensitive.",
   },
+  {
+    name: "Rachael Udo.",
+    avatarId: "customer-4",
+    rating: 5,
+    comment: "The results are quite astonishing. I never expected something I ordered online to actually work this well",
+  },
 ];
 
 const Rating = ({ rating }: { rating: number }) => (

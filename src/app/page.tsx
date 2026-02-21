@@ -14,7 +14,7 @@ import Pricing from "@/components/oello/Pricing";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <Header />
       <main className="flex-1">
         <Hero />

@@ -9,73 +9,79 @@
     {
       "id": "product-in-use",
       "description": "Image of the powder on a toothbrush",
-      "imageUrl": "https://images.unsplash.com/photo-1584516151140-f79fde30d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0b290aGJydXNoJTIwcG93ZGVyfGVufDB8fHx8MTc3MTYyNTM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/b5sZ0Dgq/Gemini-Generated-Image-lqqv5klqqv5klqqv.png",
       "imageHint": "toothbrush powder"
     },
     {
       "id": "smile-after",
       "description": "A bright white smile",
-      "imageUrl": "https://images.unsplash.com/photo-1727062820207-892e3eb6eb99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2hpdGUlMjBzbWlsZXxlbnwwfHx8fDE3NzE2MjUzODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/ZR8d1KRN/breylee-4-pic.webp",
       "imageHint": "white smile"
     },
     {
       "id": "customer-1",
       "description": "Avatar for a customer review",
-      "imageUrl": "https://images.unsplash.com/photo-1557053908-4793c484d06f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc3MTUzODA5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/TSFNSNZ/images-3.jpg",
       "imageHint": "woman portrait"
     },
     {
       "id": "customer-2",
       "description": "Avatar for another customer review",
-      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE2MjQ5Mzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/SDkqYbN4/360-F-343558406-tzgul-GVRbnvm-ISA1-Mj-Lzxt-Yl-Y4nsr-PKb.jpg",
       "imageHint": "man portrait"
     },
     {
       "id": "customer-3",
       "description": "Avatar for a third customer review",
-      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzE1OTUwNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/rRrgwFS7/corporate-headshot-photographer-nigeria-2-1.jpg",
       "imageHint": "person portrait"
+    },
+    {
+      "id": "customer-4",
+      "description": "Avatar for a third customer review",
+      "imageUrl": "https://i.ibb.co/DPZ3TcR4/Olutobi-Harry-12.webp",
+      "imageHint": "review portrait"
     },
     {
       "id": "gallery-1",
       "description": "A person smiling, showing white teeth",
-      "imageUrl": "https://images.unsplash.com/photo-1508002257421-afaf6ca14809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aGl0ZSUyMHRlZXRofGVufDB8fHx8MTc3MTY3MjIxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/JR8gtHhy/08142515520-3-jpg.webp",
       "imageHint": "white teeth"
     },
     {
       "id": "gallery-2",
       "description": "Close up of the teeth whitening powder",
-      "imageUrl": "https://images.unsplash.com/photo-1760726254324-32a930dd7bdd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3aGl0ZW5pbmclMjBwb3dkZXJ8ZW58MHx8fHwxNzcxNjcyMjE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/DDgNdTD3/Review-2-min-1-1-min-1.png",
       "imageHint": "whitening powder"
     },
     {
       "id": "gallery-3",
       "description": "Another happy customer with a bright smile",
-      "imageUrl": "https://images.unsplash.com/photo-1696718569329-bb9b81c05c98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxoYXBweSUyMHNtaWxlfGVufDB8fHx8MTc3MTY3MjIxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/63gSJSf/Untitled-design-2-600x600.jpg",
       "imageHint": "happy smile"
     },
     {
       "id": "grid-1",
       "description": "Product in a bathroom setting",
-      "imageUrl": "https://images.unsplash.com/photo-1583947582981-412704eb5c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxiYXRocm9vbSUyMHByb2R1Y3R8ZW58MHx8fHwxNzcyMjcyMjg1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/1tfHm8fC/breylee-face-closeup.webp",
       "imageHint": "bathroom product"
     },
     {
       "id": "grid-2",
       "description": "Close-up of powder texture",
-      "imageUrl": "https://images.unsplash.com/photo-1584516151140-f79fde30d55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0b290aGJydXNoJTIwcG93ZGVyfGVufDB8fHx8MTc3MTYyNTM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/Y7pVwXPt/breylee-white-before-after.jpg",
       "imageHint": "powder texture"
     },
     {
       "id": "grid-3",
       "description": "Person holding the product",
-      "imageUrl": "https://images.unsplash.com/photo-1628581885470-49a5d56a92af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcm9kdWN0JTIwc2hvdHxlbnwwfHx8fDE3NzE2MjUzODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/XZKHvJK2/breylee-night-use.jpg",
       "imageHint": "person product"
     },
     {
       "id": "grid-4",
       "description": "Lifestyle image with the product",
-      "imageUrl": "https://images.unsplash.com/photo-1508002257421-afaf6ca14809?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aGl0ZSUyMHRlZXRofGVufDB8fHx8MTc3MTY3MjIxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://i.ibb.co/MkVVsTpP/breylee-reflection.jpg",
       "imageHint": "product lifestyle"
     }
   ]

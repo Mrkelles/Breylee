@@ -18,7 +18,7 @@ const steps = [
 ];
 
 export default function HowToUse() {
-  const inUseImage = PlaceHolderImages.find((img) => img.id === "product-in-use");
+  //const inUseImage = PlaceHolderImages.find((img) => img.id === "product-in-use");
   const smileImage = PlaceHolderImages.find((img) => img.id === "smile-after");
 
   return (
@@ -32,16 +32,6 @@ export default function HowToUse() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="grid grid-cols-1 gap-8">
-                {inUseImage && (
-                    <Image
-                        src={inUseImage.imageUrl}
-                        alt={inUseImage.description}
-                        data-ai-hint={inUseImage.imageHint}
-                        width={600}
-                        height={400}
-                        className="rounded-lg shadow-md"
-                    />
-                )}
                  {smileImage && (
                     <Image
                         src={smileImage.imageUrl}

@@ -39,16 +39,16 @@ export default function Hero() {
           </div>
         </div>
         <div className="flex justify-center">
-          {heroImage && (
+          
             <Image
-              src={heroImage.imageUrl}
+              src="https://i.ibb.co/7dHX48ry/upload-product-Img-12257976974063886.webp"
               width={600}
               height={600}
-              alt={heroImage.description}
-              data-ai-hint={heroImage.imageHint}
+              alt="hero-image"
+              data-ai-hint="product-img-1"
               className="rounded-xl shadow-2xl"
             />
-          )}
+          
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between px-4">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <span className="font-bold text-lg font-headline text-accent">
-            Breylee Shop
+          BREYLEE
           </span>
         </Link>
         <nav className="flex items-center">

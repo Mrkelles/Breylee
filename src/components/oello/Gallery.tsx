@@ -12,10 +12,10 @@ export default function Gallery() {
     <section>
       <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold">See the Results</h2>
-            <p className="max-w-2xl mx-auto text-muted-foreground md:text-lg">
+            <h2 className="text-3xl md:text-4xl font-bold">Real Customers, Real Results!</h2>
+           {/* <p className="max-w-2xl mx-auto text-muted-foreground md:text-lg">
               A gallery of confident smiles and our premium product.
-            </p>
+            </p>*/}
           </div>
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4">
             {galleryImages.map((image) => (

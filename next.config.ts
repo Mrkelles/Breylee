@@ -30,7 +30,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'imgbb.com',
+        hostname: 'i.ibb.co',
         port: '',
         pathname: '/**',
       },
