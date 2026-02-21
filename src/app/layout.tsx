@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
@@ -27,6 +28,9 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
+        <div className="bg-slate-100 py-2 text-center text-sm text-slate-900 font-bold">
+          GET THIS TEETH WHITENING POWDER FOR ONLY N14,000 + FREE DELIVERY
+        </div>
         {children}
         <Toaster />
       </body>
