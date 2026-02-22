@@ -13,14 +13,14 @@ const pricingOptions = [
   },
   {
     title: "2 Packs (Recommended)",
-    price: "₦20,000",
-    originalPrice: "₦30,000",
+    price: "₦26,000",
+    originalPrice: "₦35,000",
     features: ["2 Jars of Whitening Powder", "Best value for money", "Long-lasting supply", "Free Delivery"],
     highlight: true,
   },
   {
     title: "3 Packs (Best Value)",
-    price: "₦28,000",
+    price: "₦37,000",
     originalPrice: "₦45,000",
     features: ["3 Jars of Whitening Powder", "Maximize your results", "Share with a friend", "Free Delivery"],
     highlight: false,
