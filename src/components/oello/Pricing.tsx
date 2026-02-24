@@ -58,7 +58,7 @@ export default function Pricing() {
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full" variant={option.highlight ? 'default' : 'secondary'}>
+                <Button asChild className="w-full border border-white" variant={option.highlight ? 'default' : 'secondary'}>
                   <Link href="/order">Order Now</Link>
                 </Button>
               </CardFooter>
