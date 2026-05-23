@@ -22,9 +22,9 @@ const nigerianStates = [
 ];
 
 const quantityOptions = [
-  { value: "1", label: "1 Pack (Trial)", price: "₦14,000", originalPrice: "₦20,000" },
-  { value: "2", label: "2 Packs (Recommended)", price: "₦26,000", originalPrice: "₦35,000" },
-  { value: "3", label: "3 Packs (Best Value)", price: "₦37,000", originalPrice: "₦45,000" },
+  { value: "1", label: "1 Pack (Trial)", price: "₦15,000", originalPrice: "₦20,000" },
+  { value: "2", label: "2 Packs (Recommended)", price: "₦26,000", originalPrice: "₦36,000" },
+  { value: "3", label: "3 Packs (Best Value)", price: "₦37,000", originalPrice: "₦48,000" },
 ];
 
 function SubmitButton() {
