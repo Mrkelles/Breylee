@@ -6,7 +6,7 @@ import { Check } from 'lucide-react';
 const pricingOptions = [
   {
     title: "1 Pack (Trial)",
-    price: "₦14,000",
+    price: "₦15,000",
     originalPrice: "₦20,000",
     features: ["1 Jar of Whitening Powder", "Perfect for trying out", "Noticeable results", "Free Delivery"],
     highlight: false,
@@ -14,14 +14,14 @@ const pricingOptions = [
   {
     title: "2 Packs (Recommended)",
     price: "₦26,000",
-    originalPrice: "₦35,000",
+    originalPrice: "₦36,000",
     features: ["2 Jars of Whitening Powder", "Best value for money", "Long-lasting supply", "Free Delivery"],
     highlight: true,
   },
   {
     title: "3 Packs (Best Value)",
     price: "₦37,000",
-    originalPrice: "₦45,000",
+    originalPrice: "₦48,000",
     features: ["3 Jars of Whitening Powder", "Maximize your results", "Share with a friend", "Free Delivery"],
     highlight: false,
   },
