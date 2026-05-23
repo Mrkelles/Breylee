@@ -55,7 +55,7 @@ fbq('track', 'PageView');
       </head>
       <body className="font-body antialiased">
         <div className="bg-slate-100 py-2 text-center text-sm text-slate-900 font-bold">
-          GET THIS TEETH WHITENING POWDER FOR ONLY N14,000 + FREE DELIVERY
+          GET THIS TEETH WHITENING POWDER FOR ONLY N15,000 + FREE DELIVERY
         </div>
         {children}
         <Toaster />
